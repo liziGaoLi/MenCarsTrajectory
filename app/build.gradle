@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.zhhl.analysis"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 18
+        versionName "beta-1.18.0430"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField("boolean","useTitle","false")
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+//configurations {
+//    all*.exclude group: 'com.squareup.okio'
+//    exclude group: 'com.squareup.okhttp3'
+//    all*.exclude group: 'com.android.support', module: 'support-v13'
+//}
+
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    mavenCentral()
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.1.0-alpha04'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    // ===========  retrofit2  ==========================
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+    implementation 'com.squareup.retrofit2:retrofit-mock:2.2.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.2'
+    // ===========  rx ==========================
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.4'
+    //okHttp3
+    implementation 'com.google.code.gson:gson:2.8.5'
+    //    implementation 'com.jakewharton:butterknife-annotations:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    implementation files('libs/uaacapi.jar')
+    //    implementation files('libs/ksoap2-android-assembly-3.6.2-jar-with-dependencies.jar')
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.21'
+    implementation 'com.google.dagger:dagger:2.21'
+    implementation(name: "wt", ext: "aar")
+    implementation files('libs/vpnapi.jar')
+}

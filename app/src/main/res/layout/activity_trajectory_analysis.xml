@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/mTrajectoryYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="当天"
+            android:textSize="16sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/nameWrapper"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@mipmap/circle" />
+
+            <TextView
+                android:id="@+id/mTrajectoryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/mTrajectoryPush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="16dp"
+            android:text="本人轨迹" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorBg" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/iAll"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="8dp"-->
+    <!--android:paddingBottom="8dp"-->
+    <!--android:text="全部" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/iAddress"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="8dp"-->
+    <!--android:paddingBottom="8dp"-->
+    <!--android:text="住址" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/iunLock"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="8dp"-->
+    <!--android:paddingBottom="8dp"-->
+    <!--android:text="开锁信息" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:id="@+id/iOil"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="8dp"-->
+    <!--android:paddingBottom="8dp"-->
+    <!--android:text="散装汽油" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/iZhuzhi"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="8dp"-->
+    <!--android:paddingBottom="8dp"-->
+    <!--android:text="无证居住" />-->
+    <!--</LinearLayout>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorBg" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/mTrajectoryList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:divider="@null"
+            android:background="@android:color/white"
+            />
+        <!---->
+
+        <TextView
+            android:id="@+id/nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="暂无数据"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp_18"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PersonAnalysisActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:elevation="@dimen/dp_10"
+            android:scaleType="fitXY"
+            android:src="@drawable/person_analysis_icon"
+            android:translationZ="@dimen/dp_2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/colorBg"
+            android:translationZ="@dimen/dp_0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_100"
+        android:layout_marginEnd="@dimen/dp_24"
+        android:background="@android:color/white"
+        android:elevation="@dimen/dp_4"
+        android:orientation="vertical"
+        android:translationZ="@dimen/dp_4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:text="@string/person_analysis"
+            android:textSize="@dimen/sp_18" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:background="@drawable/sip_setting_edit_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_8">
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="@string/id_input_hint"
+                android:maxLength="18"
+                android:padding="@dimen/sp_10" />
+
+            <Button android:id="@+id/floating"
+                android:layout_width="40dp"
+                android:background="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text=" " />
+        </LinearLayout>
+
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/mCamera"-->
+        <!--android:layout_marginStart="@dimen/dp_16"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="@color/colorBg"-->
+        <!--android:layout_marginTop="@dimen/dp_16"-->
+        <!--android:layout_marginEnd="@dimen/dp_16"-->
+        <!--android:layout_marginBottom="@dimen/dp_40"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<ImageView-->
+        <!--android:fitsSystemWindows="false"-->
+        <!--android:layout_marginTop="@dimen/dp_16"-->
+        <!--android:layout_width="@dimen/dp_30"-->
+        <!--android:src="@mipmap/xiangji"-->
+        <!--android:layout_height="@dimen/dp_30" />-->
+        <!--<TextView-->
+        <!--android:layout_marginBottom="@dimen/dp_16"-->
+        <!--android:layout_marginTop="@dimen/dp_8"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:text="拍摄身份证识别号码"-->
+        <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mQuery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_block"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/dp_24"
+        android:layout_marginTop="@dimen/sp_16"
+        android:layout_marginEnd="@dimen/dp_24"
+        android:background="@color/colorTextColorLight"
+        android:gravity="center"
+        android:padding="@dimen/dp_16"
+        android:text="@string/start_query"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/mCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mQuery"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/dp_24"
+        android:layout_marginTop="@dimen/sp_16"
+        android:layout_marginEnd="@dimen/dp_24"
+        android:background="@drawable/sip_setting_edit_bg"
+        android:gravity="center"
+        android:padding="@dimen/dp_16"
+        android:text="@string/back"
+        android:textSize="@dimen/sp_16" />
+
+</RelativeLayout>

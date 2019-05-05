@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zhhl.analysis">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeNoActionBar">
+        <activity
+            android:name=".activity.UserInfoActivity"
+            android:theme="@style/MyTranslucentTheme" />
+        <activity
+            android:name=".activity.GxrTrajectoryActivity"
+            android:theme="@style/MyTranslucentTheme" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask">
+            <tools:validation testUrl="http://guiji.zhhl.com" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".activity.PersonAnalysisActivity"
+            android:label="@string/title_activity_person_analysis"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity android:name=".activity.CarAnalysisActivity" />
+        <!--<activity android:name=".activity.CarTrajectoryAnalysis" />-->
+        <activity android:name=".mvp.view.activities.PersonTrajectoryAnalysisActivity" />
+        <activity android:name=".mvp.view.activities.CarTrajectoryAnalysisActivity" />
+
+        <receiver
+            android:name=".UaapiReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.zhhl.analysis" />
+                <action android:name="com.xdja.unifyauthorize.ACTION_LOGOUT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.TimeSelectActivity"
+            android:theme="@style/MyTranslucentTheme" />
+        <activity
+            android:name=".mvp.view.activities.SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!---->
+    </application>
+
+</manifest>

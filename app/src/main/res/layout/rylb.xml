@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="人员类别:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tp0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:text="人员人员"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/tp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="人员人员"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tp0"
+        app:layout_constraintStart_toEndOf="@+id/tp0"
+        app:layout_constraintTop_toTopOf="@+id/tp0" />
+
+    <TextView
+        android:id="@+id/tp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="人员人员"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tp1"
+        app:layout_constraintStart_toEndOf="@+id/tp1"
+        app:layout_constraintTop_toTopOf="@+id/tp1" />
+
+    <TextView
+        android:id="@+id/tp4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="人员人员"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tp3"
+        app:layout_constraintStart_toEndOf="@+id/tp3"
+        app:layout_constraintTop_toTopOf="@+id/tp3" />
+
+    <TextView
+        android:id="@+id/tp5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="人员人员"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tp4"
+        app:layout_constraintStart_toEndOf="@+id/tp4"
+        app:layout_constraintTop_toTopOf="@+id/tp4" />
+
+    <TextView
+        android:id="@+id/tp6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="人员人员"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tp3"
+        app:layout_constraintTop_toBottomOf="@+id/tp3" />
+
+    <TextView
+        android:id="@+id/tp3"
+        android:layout_width="wrap_content"  android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="人员人员"
+
+        app:layout_constraintStart_toStartOf="@+id/tp0"
+        app:layout_constraintTop_toBottomOf="@+id/tp0" />
+
+    <TextView
+        android:id="@+id/tp7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"  android:visibility="gone"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tp6"
+        app:layout_constraintStart_toEndOf="@+id/tp6"
+        app:layout_constraintTop_toTopOf="@+id/tp6" />
+
+    <TextView
+        android:id="@+id/tp8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp" android:visibility="gone"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tp7"
+        app:layout_constraintStart_toEndOf="@+id/tp7"
+        app:layout_constraintTop_toTopOf="@+id/tp7" />
+
+    <TextView
+        android:id="@+id/tp9" android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/tp6"
+        app:layout_constraintTop_toBottomOf="@+id/tp6" />
+
+    <TextView
+        android:id="@+id/tp10"
+        android:layout_width="wrap_content"  android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tp9"
+        app:layout_constraintStart_toEndOf="@+id/tp9"
+        app:layout_constraintTop_toTopOf="@+id/tp9" />
+
+    <TextView
+        android:id="@+id/tp11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  android:visibility="gone"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tp10"
+        app:layout_constraintStart_toEndOf="@+id/tp10"
+        app:layout_constraintTop_toTopOf="@+id/tp10" />
+
+    <TextView
+        android:id="@+id/tp12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/tp9"
+        app:layout_constraintTop_toBottomOf="@+id/tp9" />
+
+    <TextView
+        android:id="@+id/tp13"  android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tp12"
+        app:layout_constraintStart_toEndOf="@+id/tp12"
+        app:layout_constraintTop_toTopOf="@+id/tp12" />
+
+    <TextView
+        android:id="@+id/tp14"
+        android:layout_width="wrap_content"  android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tp13"
+        app:layout_constraintStart_toEndOf="@+id/tp13"
+        app:layout_constraintTop_toTopOf="@+id/tp13" />
+</androidx.constraintlayout.ConstraintLayout>

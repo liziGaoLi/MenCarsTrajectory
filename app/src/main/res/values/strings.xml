@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">人车轨迹分析</string>
+    <string name="select_query_type">选择查询类别</string>
+    <string name="description">请选择您想查询的轨迹分析项\n明确您要的才能给您最好的</string>
+    <string name="title_activity_person_analysis">PersonAnalysisActivity</string>
+    <string name="person_analysis">人员轨迹分析</string>
+    <string name="id_input_hint">请输入身份证号</string>
+    <string name="start_query">开始查询</string>
+    <string name="back">返回</string>
+    <string name="car_input_hint">请输入车牌号</string>
+    <string name="car_analysis">车辆轨迹分析</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_http">HttpActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
