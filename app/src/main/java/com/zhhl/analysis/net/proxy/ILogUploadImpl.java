@@ -42,8 +42,8 @@ public class ILogUploadImpl {
          *  String sourcePort
          */
         if (App.app().getUserInfo() != null)
-            if (userInfo != null)
-                upload(userInfo.getCode(), "java.security.NoSuchAlgorithmException: The BC provider no longer provides an implementation for CertificateFactory.X.509"/*vpnApi50.getDefaultCertSN()*/, userInfo.getIdentifier(),
+            if (userInfo != null)//java.security.NoSuchAlgorithmException: The BC provider no longer provides an implementation for CertificateFactory.X.509
+                upload(userInfo.getCode(), ""/*vpnApi50.getDefaultCertSN()*/, userInfo.getIdentifier(),
                         "12", params, url, MacUtils.getIPAddress(App.app()),
                         "人车轨迹分析", "", response, "500", "192.168.20.228",
                         "7103")
